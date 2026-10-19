@@ -35,8 +35,8 @@ pip install -r requirements.txt
 python main.py
 ```
 **Скриншоты:**
--Пример запуска: assets/BankProject.png
--Результат pytest: assets/pytest BankProject.png
+- Пример запуска: assets/BankProject.png
+- Результат pytest: assets/pytest BankProject.png
 
 ## 2) MemeGest — распознавание жестов
 
@@ -66,5 +66,6 @@ python main.py
 Модель:
 -Файл модели `hand_landmarker.task` можно скачать по ссылке и положить рядом с main.py: https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task
 **Скриншоты:**
--Пример запуска: assets/MemeGest1.png, assets/MemeGest2.png
--Жесты: gesture.pdf
+- Пример запуска: assets/MemeGest1.png, assets/MemeGest2.png
+
+- Жесты: gesture.pdf
