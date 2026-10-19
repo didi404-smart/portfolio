@@ -35,5 +35,36 @@ pip install -r requirements.txt
 python main.py
 ```
 **Скриншоты:**
-Пример запуска: assets/bankproject_cli.png
-Результат pytest: assets/pytest.png
+-Пример запуска: assets/BankProject.png
+-Результат pytest: assets/pytest BankProject.png
+
+## 2) MemeGest — распознавание жестов
+
+**Что сделано (результат):**
+-Разработано приложение, распознающее 14 жестов руки по видеопотоку и отображающее соответствующую мем‑картинку.
+-Реализован пайплайн: камера - landmarks (MediaPipe) - определение жеста - вывод изображения, приложение работает в реальном времени.
+-Собрана версия .exe для запуска на Windows.
+
+**Стек:** Python, OpenCV, MediaPipe, computer vision, обработка видеопотока, логика/алгоритмы, работа с файлами (os), отладка, сборка .exe.
+
+**Ссылки:**
+-Репозиторий: https://github.com/USERNAME/memegest (замени на свою ссылку)
+
+**Как посмотреть/запустить:**
+-Вариант 1: запустить собранный .exe (если приложен/доступен).
+-Вариант 2: запуск из исходников:
+```bash
+git clone https://github.com/USERNAME/memegest.git
+cd memegest
+
+python -m venv .venv
+.venv\Scripts\activate
+
+pip install -r requirements.txt
+python main.py
+```
+Модель:
+-Файл модели `hand_landmarker.task` можно скачать по ссылке и положить рядом с main.py: https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task
+**Скриншоты:**
+-Пример запуска: assets/MemeGest1.png, assets/MemeGest2.png
+-Жесты: gesture.pdf
