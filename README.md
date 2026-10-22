@@ -48,7 +48,7 @@ python main.py
 **Стек:** Python, OpenCV, MediaPipe, computer vision, обработка видеопотока, логика/алгоритмы, работа с файлами (os), отладка, сборка .exe.
 
 **Ссылки:**
--Репозиторий: https://github.com/USERNAME/memegest (замени на свою ссылку)
+-Репозиторий: https://github.com/didi404-smart/MemeGest
 
 **Как посмотреть/запустить:**
 -Вариант 1: запустить собранный .exe (если приложен/доступен).
