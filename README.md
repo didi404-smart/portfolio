@@ -51,8 +51,6 @@ python main.py
 -Репозиторий: https://github.com/didi404-smart/MemeGest
 
 **Как посмотреть/запустить:**
--Вариант 1: запустить собранный .exe (если приложен/доступен).
--Вариант 2: запуск из исходников:
 ```bash
 git clone https://github.com/USERNAME/memegest.git
 cd memegest
