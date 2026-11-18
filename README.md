@@ -148,13 +148,13 @@ poetry run pytest --cov=src.MathTrainer --cov-branch --cov-report=term-missing
 * Реализованы инкапсуляция цены (геттер/сеттер с валидацией и подтверждением понижения), перегрузка операторов (`+`, `str`, `repr`), итератор по товарам категории, классовый метод создания товара из словаря с объединением дубликатов, собственные исключения (`ZeroQuantity`) и чтение данных из JSON.
 * Вся функциональность покрыта unit-тестами на `pytest` (покрытие 100%) с `MagicMock`, `capsys` и `monkeypatch` (подмена `input`, проверка вывода и исключений).
 
-** Стек: ** Python, ООП, ABC, магические методы, property, итераторы, исключения, JSON, pytest, pytest-cov, mocking, Poetry, flake8, Git.
+**Стек:** Python, ООП, ABC, магические методы, property, итераторы, исключения, JSON, pytest, pytest-cov, mocking, Poetry, flake8, Git.
 
-** Ссылки: **
+**Ссылки:**
 
 * Репозиторий: https://github.com/didi404-smart/Market
 
-** Как запустить: **
+**Как запустить:**
 
 ```
 git clone https://github.com/didi404-smart/Market.git
