@@ -8,7 +8,7 @@
 
 ---
 
-## 1) BankProject — CLI для банковских транзакций + тесты
+## BankProject — CLI для банковских транзакций + тесты
 
 **Что сделано (результат):**
 - Реализовано консольное приложение для загрузки операций из **JSON/CSV/XLSX** и формирования выборки транзакций по параметрам пользователя.
@@ -38,7 +38,7 @@ python main.py
 - Пример запуска: assets/BankProject.png
 - Результат pytest: assets/pytest BankProject.png
 
-## 2) MemeGest — распознавание жестов
+## MemeGest — распознавание жестов
 
 **Что сделано (результат):**
 -Разработано приложение, распознающее 14 жестов руки по видеопотоку и отображающее соответствующую мем‑картинку.
@@ -67,7 +67,7 @@ python main.py
 - Пример запуска: assets/MemeGest1.png, assets/MemeGest2.png
 
 - Жесты: gesture.pdf
-## 3. MathTrainer — десктоп-приложение для тренировки математики
+## MathTrainer — десктоп-приложение для тренировки математики
 
 **Что сделано:**
 - Разработано десктоп-приложение на Python с графическим интерфейсом PySide6 для тренировки базовой математики детьми дошкольного и младшего школьного возраста.
@@ -139,3 +139,28 @@ poetry run pytest --cov=src.MathTrainer --cov-branch --cov-report=term-missing
 **Скриншоты:**
 - Примеры работы: assets/MathTrainer1, assets/MathTrainer2, assets/MathTrainer3
 - Покрытие тестами: assets/MathTrainer_cov
+
+## Market — ООП-модель интернет-магазина + тесты
+
+** Что сделано (результат): **
+
+* Спроектирована объектная модель магазина: товары (`Product`, `Smartphone`, `LawnGrass`), категории (`Category`) и заказы (`Order`) с наследованием, абстрактными базовыми классами (`BaseProduct`, `BaseCategory`) и миксином `PrintMixin` для логирования создания объектов.
+* Реализованы инкапсуляция цены (геттер/сеттер с валидацией и подтверждением понижения), перегрузка операторов (`+`, `str`, `repr`), итератор по товарам категории, классовый метод создания товара из словаря с объединением дубликатов, собственные исключения (`ZeroQuantity`) и чтение данных из JSON.
+* Вся функциональность покрыта unit-тестами на `pytest` (покрытие 100%) с `MagicMock`, `capsys` и `monkeypatch` (подмена `input`, проверка вывода и исключений).
+
+** Стек: ** Python, ООП, ABC, магические методы, property, итераторы, исключения, JSON, pytest, pytest-cov, mocking, Poetry, flake8, Git.
+
+** Ссылки: **
+
+* Репозиторий: https://github.com/didi404-smart/Market
+
+** Как запустить: **
+
+```
+git clone https://github.com/didi404-smart/Market.git
+cd Market
+
+pip install poetry
+poetry install
+poetry run pytest --cov=src
+```
